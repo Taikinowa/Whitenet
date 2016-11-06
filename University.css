@@ -1,0 +1,149 @@
+body
+{
+background-image: url('BU.png');
+background-size: cover;
+}
+
+k1
+{
+font-variant: small-caps;
+color: white;
+padding: 0px 8px;
+border: 1px solid ;
+border-radius: 20px;
+margin-top: 0px;
+background-color: black;
+text-shadow: red 1px 1px, red -1px 1px, red -1px -1px,red 1px -1px ;
+text-align:center;
+}
+
+img
+{
+margin-top:210px;
+margin-left: 17.5cm;
+overflow:scroll;
+}
+
+a:link
+{
+color:transparent;
+}
+
+img:hover
+{
+cursor:url('Cursor.gif'),default;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+#M1
+{
+color : red;
+}
+
+#M1,#M1 ul
+{
+padding : 0;
+margin : 0; 
+list-style : none; 
+line-height : 40px;
+text-align : center;
+}
+
+#M1 /* Ensemble du menu */
+{
+font-weight : bold; 
+font-family : Arial;
+font-size : 12px; 
+padding: 0;
+margin:0;
+text-align:center;
+}
+
+#M1 a /* Contenu des listes */
+
+{
+display: block;
+padding : 5px; 
+border : 2px solid yellow;
+border-radius: 0px;
+border-collapse: collapse;
+background : transparent; /* couleur de fond */        
+color : white; /* couleur du texte */
+text-decoration : none; 
+width : 144px; /* largeur */
+text-transform: uppercase;
+cursor:url('Cursor.gif'),default;
+text-align: center;
+display:inline-block;
+margin: 0 40px;
+}
+
+#M1 li
+{
+float:left;
+border-right: 1px solid blue;
+display: inline;
+list-style: none;
+}
+
+html>body #M1 li
+{
+border-right: 1px solid transparent;
+}
+
+#M1 li ul
+{
+position: absolute;
+width: 144px;
+left: -20cm;
+}
+
+#M1 li ul li
+{
+border-top: 1px solid transparent;
+}
+
+html>body #M1 li ul li
+{
+border-right: 1px solid transparent;
+}
+
+#M1 li ul ul
+{
+margin: -22px 0 0 144px;
+border-left: 1px solid transparent;
+}
+
+html>body #M1 li ul ul
+{
+border-left: 1px solid transparent;
+}
+
+/*---------------------------------------------- */
+
+#M1 a:hover
+{
+color: red;
+background: rgb(73,245,245);
+text-transform: lowercase;
+text-transform: capitalize;
+}
+
+
+
+#M1 li:hover ul ul, #M1 li.sfhover ul ul
+
+{
+left: -20px; /* On expédie les sous-sous-listes hors du champ de vision */
+}
+
+
+#M1 li:hover ul, #M1 li li:hover ul, #M1 li.sfhover ul, #M1 li li.sfhover ul  
+{
+left: auto;
+min-height: 0;
+}
+
+
+
+
